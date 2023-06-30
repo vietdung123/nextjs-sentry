@@ -7,6 +7,7 @@ const WrapperComponent = ({ contacts }) => {
 const withHOC = (key) => (WC) => {
   // eslint-disable-next-line react/display-name
   console.log('key', key);
+  // eslint-disable-next-line react/display-name
   return (props) => {
     console.log({ props });
     return <WC {...props} />
